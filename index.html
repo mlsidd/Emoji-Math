@@ -1,0 +1,63 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Emoji Random Math</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />   
+    <script src="assets/javascript/game.js"></script>
+</head>
+<body>
+    <div id="content-wrapper">
+        <div class="row">
+            <div id="title">Emoji Math</div>
+        </div> <!-- END OF ROW 1-->
+
+        <div class="row">
+            <div id="directions">
+                Click on the start button to see a Target Number. Click on an emoji to add to the User Number.<br>
+                Continue clicking on the emojis until you are able to get your User Number to equal the Target Number.<br>
+                If you can get your number to match, you win!  If you go over the target number, you lose.<br>
+                Each time you play a new random number is selected as your Target Number and the value of each emoji changes.
+            </div>
+        </div> <!-- END OF ROW 2-->
+
+        <div class="row">
+            <div id="targetNumBox">
+                <div id="targetNumTitle">Target Number</div>
+                <div id="targetNumber"></div>
+            </div>
+            <div id="playerNumBox">
+                <div id="playerNumTitle">Your Number</div>
+                <div id="playerNumber"></div>
+            </div>
+        </div> <!-- END OF ROW 3-->
+
+        <div class="row">
+            <div id="winLossBox">
+                <div id="winBox">
+                    <div id="winTitle">Wins</div>
+                    <div id="winScore" value="0">0</div>
+                </div>
+                <div id="lossBox">
+                    <div id="lossTitle">Losses</div>
+                    <div id="lossScore" value="0">0</div>
+                </div>    
+            </div>
+            <div id="emojiBox">
+                <img src="assets/images/poopEmoji.png" alt="Poop Emoji" id="imageOne">
+                <img src="assets/images/screamEmoji.jpg" alt="Yelling Emoji" id="imageTwo">
+                <img src="assets/images/vomitEmoji.jpg" alt="Throwing Up Emoji" id="imageThree">
+                <img src="assets/images/winkEmoji.jpg" alt="winking Emjoi" id="imageFour">
+            </div>
+        </div> <!-- END OF ROW 4-->
+        <div class="row">
+            <div id="startButton"><img src="assets/images/startButton.png" alt="Start Button"></div>
+        </div>
+    </div> <!-- END OF CONTAINER WRAPPER -->
+
+
+</body>
+</html>

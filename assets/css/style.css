@@ -1,0 +1,182 @@
+#content-wrapper {
+    width:100%;
+    height:100%;
+    background-color: black;
+}
+
+.row {
+    width:100%;
+    padding:0px;
+    margin-top:30px;
+}
+
+#title {
+    margin-left: 24%;
+    margin-right:24%;
+    margin-top:10px;
+    width:50%;
+    text-align:center;
+    font-size:70px;
+    font-family:fantasy;
+    color:rgb(20, 155, 179);
+}
+
+#directions {
+    color:white;
+    margin-top:0px;
+    font-size: 20px;
+    text-align:center;
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+#targetNumBox {
+    border-style: solid;
+    border-color:rgb(20, 155, 179);
+    width:39%;
+    margin-top:40px;
+    margin-left:5%;
+    height:200px;
+    margin-right:8%;
+    float:left;
+}
+
+#targetNumTitle {
+    color:rgb(255, 55, 155);
+    font-size:40px;
+    width:80%;
+    margin-top:5px;
+    margin-bottom:10%;
+    margin-right:10%;
+    margin-left:10%;
+    text-align: center;
+}
+
+#playerNumBox {
+    border-style: solid;
+    border-color:rgb(255, 55, 155);
+    width:39%;
+    height:200px;
+    margin-top:40px;
+    margin-right:5%;
+    float:left;
+    position:relative;
+}
+
+#playerNumTitle {
+    color:rgb(20, 155, 179);
+    font-size:40px;
+    width:80%;
+    margin-top:5px;
+    margin-bottom:10%;
+    margin-right:10%;
+    margin-left:10%;
+    text-align: center;
+}
+
+#targetNumber {
+    width: 60%;
+    margin-left:20%;
+    margin-right:20%;
+    margin-top:20px;
+    background-color:rgb(78, 66, 66);
+    color:white;
+    text-align:center;
+    font-size:50px;    
+    position:relative;
+}
+
+#playerNumber {
+    width:60%;
+    margin-left:20%;
+    margin-right:20%;
+    margin-top:10px;
+    background-color:rgb(34, 31, 31);
+    color:white;
+    text-align:center;
+    font-size:50px;
+    position:relative;
+}
+
+#winLossBox {
+    width:39%;
+    margin-top:60px;
+    margin-left:5%;
+    margin-right:8%;
+    float:left;
+    position:relative;
+}
+
+#winBox {
+    width:45%;
+    margin-left:5%;
+    position:relative;
+    float:left;
+    background-color:rgb(68, 245, 52);
+}
+
+#lossBox {
+    width:45%;
+    margin-left:5%;
+    position:relative;
+    float:left;
+    background-color:rgb(8, 73, 2);
+}
+
+#winTitle {
+    text-align:center;
+    width:100%;
+    float:left;
+    padding-top:10px;
+    font-size:30px;
+    color:rgb(8, 73, 2);
+    text-align:center;
+    text-decoration: underline;
+}
+
+#lossTitle {
+    text-align:center;
+    width:100%;
+    padding-top:10px;
+    float:left;
+    font-size:30px;
+    color:rgb(68, 245, 52);
+    text-align:center;
+    text-decoration: underline;
+}
+
+#winScore {
+    clear:both;
+    font-size:36px;
+    color:black;
+    text-align:center;
+}
+
+#lossScore {
+    clear:both;
+    font-size:36px;
+    color:black;
+    text-align:center;
+}
+
+#emojiBox {
+    margin-left:10%;
+    width:35%;
+    float:left;
+    position:relative;
+}
+
+img {
+    width:80px;
+    height:80px;
+    margin:10px;
+}
+
+#startButton {
+    clear:both;
+    width:150px;
+    height:150px;
+    margin-left:45%;
+    margin-right:45%;
+}
