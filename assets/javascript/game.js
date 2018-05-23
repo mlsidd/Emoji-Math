@@ -108,7 +108,6 @@ var counter4 = function () {
 var image4Click = document.getElementById("imageFour");
 image4Click.addEventListener('click', counter4, false);
 
-
 //Set wins and losses to 0
 var wins = 0;
 var winEl = document.getElementById("winScore");
@@ -119,21 +118,55 @@ var lossEl = document.getElementById("lossScore");
 //when player number equals the target number, the game ends and a win is added to total wins
 function checkForMatch() {
     if (userCount == randomNumber) {
+        userCount = randomNumber;
+        playerNumEl.textContent = userCount;
         alert("You did it!");
         wins ++;
         winEl.textContent = wins;
-        reset();
+        setPlayerNumberToZero();
+        generateRandomNumber2();
+        assignEmojiValues();
     } else
     if (userCount > randomNumber) {
         alert("You lose...try again!");
         losses ++;
         lossEl.textContent = losses;
-        reset();
+        setPlayerNumberToZero();
+        generateRandomNumber2();
+        assignEmojiValues();
     }
+
+function generateRandomNumber2() {
+    randomNumber = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
+    targetNum = document.getElementById("targetNumber");
+    targetNum.textContent = randomNumber;
+};
 }
 
-function reset() {
-
-
+function setPlayerNumberToZero() {
+    userCount = 0;
+    playerNumEl.textContent = userCount;
 }
 
+var startBut = document.getElementById("startButton");
+startBut.addEventListener('click', setPlayerNumberToZero, false);
+
+
+
+function assignEmojiValues(){
+    emojiRandomNum1 = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
+    emoji1Value = document.getElementById("imageOne");
+    emoji1Value.setAttribute('value', emojiRandomNum1);
+
+    emojiRandomNum2 = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
+    emoji2Value = document.getElementById("imageTwo");
+    emoji2Value.setAttribute('value', emojiRandomNum2);
+
+    emojiRandomNum3 = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
+    emoji3Value = document.getElementById("imageThree");
+    emoji3Value.setAttribute('value', emojiRandomNum3);
+
+    emojiRandomNum4 = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
+    emoji4Value = document.getElementById("imageFour");
+    emoji4Value.setAttribute('value', emojiRandomNum4);
+}
