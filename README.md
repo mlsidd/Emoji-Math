@@ -7,3 +7,4 @@ This project is intended to create a Math game in which the user must click the 
 ## My Approach
 I utilized the Math.random function in JavaScript to assign random numbers to the emoji's and the target number.  I used event listeners to listen for clicks on the emoji buttons.  
 
+© Melissa Siddoway
